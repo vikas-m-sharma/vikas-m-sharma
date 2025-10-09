@@ -14,7 +14,7 @@
 - ⚡ Fun fact: I love **learning new tech** and swimming when I’m not coding 🏊‍♂️  
 - 📫 Reach me on:  
   - 🐦 **Twitter:** [@vikas_msharma](https://twitter.com/vikas_msharma)  
-  - 🎥 **YouTube:** [@codewiththink303](https://youtube.com/@codewiththink303)  
+  - 🎥 **YouTube:** [@Code2Faith](https://youtube.com/@Code2Faith)  
   - 📸 **Instagram:** [code_with_think](https://instagram.com/code_with_think)
 
 ---
@@ -25,7 +25,7 @@
 <a href="https://linkedin.com/in/vikas-sharma-038177214" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="https://twitter.com/vikas_msharma" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white"/></a>
 <a href="https://instagram.com/code_with_think" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white"/></a>
-<a href="https://youtube.com/@codewiththink303" target="_blank"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+<a href="https://youtube.com/@Code2Faith" target="_blank"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=youtube&logoColor=white"/></a>
 <a href="https://behance.net/VikasSharma" target="_blank"><img src="https://img.shields.io/badge/Behance-1769ff?logo=behance&logoColor=white"/></a>
 </p>
 
@@ -75,25 +75,6 @@
 
 ## ✍️ Favorite Dev Quote
 > “Code is like humor. When you have to explain it, it’s bad.” – Cory House  
-
----
-
-## 😂 Random Dev Meme
-<img src="https://random-memer.herokuapp.com/" width="400"/>
-
----
-
-## ☕ Support My Work
-If you like my work, consider supporting me 💖  
-
-[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/codewiththink)  
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/imvikas)
-
----
-
-<p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=vikas-m-sharma&label=Profile%20Views&color=11&icon=5&pretty=true" />
-</p>
 
 ---
 

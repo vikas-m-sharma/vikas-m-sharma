@@ -17,7 +17,7 @@ I build intelligent systems using **Python, Machine Learning, and Large Language
 - 🌱 Exploring **AI Agents, Generative AI, and LangChain**
 - 💬 Ask me about **Python, ML models, or backend design**
 - 👯 Looking to collaborate on **AI/ML projects** and **open-source contributions**
-- 🎥 Building my tech channel — [**Code2Faith**](https://youtube.com/@Code2Faith)
+- 🎥 Building my tech channel — [**Pyruntime**](https://youtube.com/@Pyruntime)
 - ⚡ Fun fact: I can swim through bugs faster than Stack Overflow answers 😎  
 
 ---

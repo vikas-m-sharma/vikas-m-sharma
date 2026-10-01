@@ -1,15 +1,298 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
-<defs><linearGradient id="g"><stop stop-color="#00f5a0"/><stop offset="1" stop-color="#00d9ff"/></linearGradient></defs>
-<rect width="1200" height="300" rx="24" fill="#0b0f19" stroke="#27324a"/>
-<rect x="32" y="32" width="1136" height="236" rx="18" fill="#101827" stroke="#334155"/>
-<circle cx="150" cy="150" r="76" fill="#111827" stroke="#00f5a0" stroke-width="2"/>
-<text x="150" y="142" text-anchor="middle" fill="#00f5a0" font-size="30" font-family="monospace" font-weight="700">VS</text>
-<text x="150" y="172" text-anchor="middle" fill="#94a3b8" font-size="12" font-family="monospace">PY ENGINEER</text>
-<text x="270" y="92" fill="#00f5a0" font-family="monospace" font-size="14" letter-spacing="3">DEVELOPER ID // 003+</text>
-<text x="270" y="135" fill="white" font-family="Arial" font-size="30" font-weight="700">Vikas Sharma</text>
-<text x="270" y="166" fill="#cbd5e1" font-family="Arial" font-size="17">Python Engineer · AI &amp; GenAI · Backend Systems</text>
-<text x="270" y="205" fill="#94a3b8" font-family="monospace" font-size="13">PYTHON  |  DJANGO  |  FASTAPI  |  LLM  |  RAG  |  AWS</text>
-<text x="1040" y="92" fill="#64748b" font-family="monospace" font-size="12">STATUS</text>
-<circle cx="1052" cy="122" r="7" fill="#00f5a0"><animate attributeName="opacity" values="1;.25;1" dur="1.5s" repeatCount="indefinite"/></circle>
-<text x="1070" y="127" fill="#e2e8f0" font-family="monospace" font-size="13">ACTIVE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913"/>
+      <stop offset="50%" stop-color="#0d1322"/>
+      <stop offset="100%" stop-color="#101827"/>
+    </linearGradient>
+
+    <!-- Holographic Shine Gradient -->
+    <linearGradient id="holoShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5a0" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00d9ff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#a855f7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Scan Line Gradient -->
+    <linearGradient id="scanBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5a0" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f5a0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00d9ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="neonCyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5a0"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <linearGradient id="barCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5a0"/>
+      <stop offset="100%" stop-color="#00d9ff"/>
+    </linearGradient>
+
+    <linearGradient id="barPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="barBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+
+    <linearGradient id="barTeal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <linearGradient id="barPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+
+    <filter id="cardGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="panelClip">
+      <rect width="1200" height="460" rx="24"/>
+    </clipPath>
+
+    <clipPath id="idCardSubClip">
+      <rect x="36" y="36" width="410" height="388" rx="20"/>
+    </clipPath>
+
+    <!-- Matrix dots pattern -->
+    <pattern id="matrixDots" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#panelClip)">
+    <!-- Base Outer Frame -->
+    <rect width="1200" height="460" rx="24" fill="url(#cardBg)" stroke="#1e293b" stroke-width="2"/>
+
+    <!-- ========================================================
+         LEFT PANEL: DEVELOPER IDENTITY CARD (x: 36, y: 36, w: 410, h: 388)
+         ======================================================== -->
+    <g clip-path="url(#idCardSubClip)">
+      <!-- Card Background -->
+      <rect x="36" y="36" width="410" height="388" rx="20" fill="#0b0f19" stroke="#334155" stroke-width="1.5"/>
+
+      <!-- Matrix Dots Background -->
+      <rect x="36" y="36" width="410" height="388" fill="url(#matrixDots)"/>
+
+      <!-- Rotating Security Elements (Circular Reticle) -->
+      <g transform="translate(100, 115)">
+        <circle r="46" fill="none" stroke="#00f5a0" stroke-width="1.2" stroke-dasharray="4 8" opacity="0.5">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="52" fill="none" stroke="#a855f7" stroke-width="0.8" stroke-dasharray="2 12" opacity="0.4">
+          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="16s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Reticle Crosshairs -->
+        <line x1="-54" y1="0" x2="-46" y2="0" stroke="#00f5a0" stroke-width="1.5"/>
+        <line x1="46" y1="0" x2="54" y2="0" stroke="#00f5a0" stroke-width="1.5"/>
+        <line x1="0" y1="-54" x2="0" y2="-46" stroke="#00f5a0" stroke-width="1.5"/>
+        <line x1="0" y1="46" x2="0" y2="54" stroke="#00f5a0" stroke-width="1.5"/>
+      </g>
+
+      <!-- ID Avatar Monogram Frame -->
+      <circle cx="100" cy="115" r="38" fill="#111827" stroke="url(#neonCyanPurple)" stroke-width="2.5" filter="url(#cardGlow)"/>
+      <text x="100" y="122" text-anchor="middle" fill="#00f5a0" font-family="'Courier New', monospace" font-size="24" font-weight="900" letter-spacing="1">VS</text>
+
+      <!-- ID Card Header Badges -->
+      <g transform="translate(160, 68)">
+        <text x="0" y="14" fill="#00f5a0" font-family="'Courier New', monospace" font-size="12" font-weight="700" letter-spacing="2.5">DEVELOPER ID // 003+</text>
+        <rect x="0" y="24" width="105" height="18" rx="9" fill="#1e1b4b" stroke="#a855f7" stroke-width="1"/>
+        <text x="52" y="37" text-anchor="middle" fill="#c084fc" font-family="'Courier New', monospace" font-size="9" font-weight="700" letter-spacing="1">AI SYSTEMS</text>
+      </g>
+
+      <!-- Name & Credentials -->
+      <text x="160" y="132" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="800">VIKAS SHARMA</text>
+      <text x="160" y="152" fill="#38bdf8" font-family="'Courier New', monospace" font-size="13" font-weight="700">PYTHON AI/LLM ENGINEER</text>
+      <text x="160" y="170" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12.5" font-weight="600">3+ YEARS EXPERIENCE</text>
+
+      <!-- Divider Line -->
+      <line x1="60" y1="190" x2="420" y2="190" stroke="#1e293b" stroke-width="1.5"/>
+
+      <!-- Skills Header -->
+      <text x="60" y="212" fill="#64748b" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" letter-spacing="1.5">CORE SKILLS &amp; CAPABILITIES</text>
+
+      <!-- 6 Skill Pills -->
+      <g transform="translate(60, 224)">
+        <!-- Pill 1: Python -->
+        <rect x="0" y="0" width="100" height="24" rx="12" fill="#0f172a" stroke="#00f5a0" stroke-width="1"/>
+        <text x="50" y="16" text-anchor="middle" fill="#00f5a0" font-family="'Courier New', monospace" font-size="11" font-weight="700">PYTHON</text>
+
+        <!-- Pill 2: FastAPI -->
+        <rect x="110" y="0" width="105" height="24" rx="12" fill="#0f172a" stroke="#00d9ff" stroke-width="1"/>
+        <text x="162" y="16" text-anchor="middle" fill="#00d9ff" font-family="'Courier New', monospace" font-size="11" font-weight="700">FASTAPI</text>
+
+        <!-- Pill 3: Django -->
+        <rect x="225" y="0" width="105" height="24" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="277" y="16" text-anchor="middle" fill="#38bdf8" font-family="'Courier New', monospace" font-size="11" font-weight="700">DJANGO</text>
+
+        <!-- Pill 4: LLMs -->
+        <rect x="0" y="32" width="90" height="24" rx="12" fill="#0f172a" stroke="#a855f7" stroke-width="1"/>
+        <text x="45" y="48" text-anchor="middle" fill="#c084fc" font-family="'Courier New', monospace" font-size="11" font-weight="700">LLMS</text>
+
+        <!-- Pill 5: RAG -->
+        <rect x="100" y="32" width="90" height="24" rx="12" fill="#0f172a" stroke="#ec4899" stroke-width="1"/>
+        <text x="145" y="48" text-anchor="middle" fill="#f472b6" font-family="'Courier New', monospace" font-size="11" font-weight="700">RAG</text>
+
+        <!-- Pill 6: AI Agents -->
+        <rect x="200" y="32" width="130" height="24" rx="12" fill="#0f172a" stroke="#2dd4bf" stroke-width="1"/>
+        <text x="265" y="48" text-anchor="middle" fill="#2dd4bf" font-family="'Courier New', monospace" font-size="11" font-weight="700">AI AGENTS</text>
+      </g>
+
+      <!-- Status Indicator Pill -->
+      <g transform="translate(60, 315)">
+        <rect width="360" height="34" rx="17" fill="#061f18" stroke="#00f5a0" stroke-width="1.2"/>
+        <circle cx="20" cy="17" r="7" fill="none" stroke="#00f5a0" stroke-width="1.5">
+          <animate attributeName="r" values="4;10;4" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.9;0;0.9" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="20" cy="17" r="4" fill="#00f5a0"/>
+        <text x="38" y="22" fill="#00f5a0" font-family="'Courier New', monospace" font-size="11" font-weight="700" letter-spacing="1">STATUS: ACTIVE // READY TO SHIP</text>
+      </g>
+
+      <text x="60" y="380" fill="#64748b" font-family="'Courier New', monospace" font-size="10">AUTH: <tspan fill="#94a3b8">SHA-256::VK-SHARMA-003</tspan></text>
+
+      <!-- Moving Holographic Shine Bar (Repeated Left to Right) -->
+      <rect x="-300" y="36" width="180" height="388" fill="url(#holoShine)" opacity="0.3" transform="skewX(-20)">
+        <animate attributeName="x" values="-300;600" dur="4.2s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Laser Scanning Line (Moving Vertically) -->
+      <line x1="36" y1="40" x2="446" y2="40" stroke="url(#scanBeam)" stroke-width="2.5">
+        <animate attributeName="y1" values="40;420;40" dur="3.6s" repeatCount="indefinite"/>
+        <animate attributeName="y2" values="40;420;40" dur="3.6s" repeatCount="indefinite"/>
+      </line>
+
+      <!-- Glowing Animated Border on ID Card -->
+      <rect x="36" y="36" width="410" height="388" rx="20" fill="none" stroke="url(#neonCyanPurple)" stroke-width="2" opacity="0.6" stroke-dasharray="100 200">
+        <animate attributeName="stroke-dashoffset" values="0;600" dur="10s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- ========================================================
+         RIGHT PANEL: CYBER TERMINAL & DASHBOARD (x: 470, y: 36, w: 694, h: 388)
+         ======================================================== -->
+    <g transform="translate(470, 36)">
+      <!-- Terminal Frame -->
+      <rect width="694" height="388" rx="20" fill="#0a0e1a" stroke="#1e293b" stroke-width="1.5"/>
+
+      <!-- Terminal Top Titlebar -->
+      <path d="M 0 20 A 20 20 0 0 1 20 0 L 674 0 A 20 20 0 0 1 694 20 L 694 36 L 0 36 Z" fill="#0f172a"/>
+      <circle cx="22" cy="18" r="5.5" fill="#ef4444"/>
+      <circle cx="38" cy="18" r="5.5" fill="#eab308"/>
+      <circle cx="54" cy="18" r="5.5" fill="#22c55e"/>
+      <text x="347" y="23" text-anchor="middle" fill="#64748b" font-family="'Courier New', monospace" font-size="11" font-weight="600">bash ~ vikas@pyruntime: ~ whoami</text>
+
+      <!-- Terminal Body Content -->
+      <g transform="translate(24, 46)" font-family="'Courier New', monospace">
+        <!-- Command Input Line -->
+        <text x="0" y="20" font-size="14" font-weight="700">
+          <tspan fill="#00f5a0">vikas@pyruntime</tspan><tspan fill="#64748b">:</tspan><tspan fill="#38bdf8">~</tspan><tspan fill="#ffffff">$ whoami</tspan>
+        </text>
+
+        <!-- Line 1 -->
+        <text x="0" y="44" fill="#cbd5e1" font-size="12.5" font-weight="600">
+          <tspan fill="#00d9ff">&gt; </tspan>Python AI/LLM Engineer (3+ Years Experience)
+          <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" repeatCount="indefinite"/>
+        </text>
+
+        <!-- Line 2 -->
+        <text x="0" y="66" fill="#cbd5e1" font-size="12.5" font-weight="600">
+          <tspan fill="#00d9ff">&gt; </tspan>Building scalable backend systems (FastAPI · Django · Celery)
+          <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.2;0.3;1" dur="10s" repeatCount="indefinite"/>
+        </text>
+
+        <!-- Line 3 -->
+        <text x="0" y="88" fill="#cbd5e1" font-size="12.5" font-weight="600">
+          <tspan fill="#a855f7">&gt; </tspan>Engineering RAG pipelines &amp; Vector Databases
+          <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.35;0.45;1" dur="10s" repeatCount="indefinite"/>
+        </text>
+
+        <!-- Line 4 -->
+        <text x="0" y="110" fill="#cbd5e1" font-size="12.5" font-weight="600">
+          <tspan fill="#ec4899">&gt; </tspan>Autonomous AI Agents &amp; Tool Calling Architecture
+          <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5;0.6;1" dur="10s" repeatCount="indefinite"/>
+        </text>
+
+        <!-- Line 5 -->
+        <text x="0" y="132" fill="#cbd5e1" font-size="12.5" font-weight="600">
+          <tspan fill="#00f5a0">&gt; </tspan>Shipping production-ready intelligent systems
+          <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.65;0.75;1" dur="10s" repeatCount="indefinite"/>
+        </text>
+
+        <!-- Line 6 with Blinking Cursor -->
+        <text x="0" y="154" font-size="12.5" font-weight="600">
+          <tspan fill="#00f5a0">vikas@pyruntime</tspan><tspan fill="#64748b">:</tspan><tspan fill="#38bdf8">~</tspan><tspan fill="#ffffff">$ </tspan>
+          <tspan fill="#00f5a0">ready_to_build.py</tspan>
+          <tspan fill="#00f5a0"> █<animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/></tspan>
+        </text>
+      </g>
+
+      <!-- Horizontal Divider -->
+      <line x1="20" y1="216" x2="674" y2="216" stroke="#1e293b" stroke-width="1.5"/>
+
+      <!-- Dashboard Subheader -->
+      <text x="24" y="234" fill="#94a3b8" font-family="'Courier New', monospace" font-size="11" font-weight="700" letter-spacing="1.5">⚡ ENGINEERING FOCUS DASHBOARD // ARCHITECTURAL COMMITMENT</text>
+
+      <!-- 5 Skill Progress Cards -->
+      <g transform="translate(24, 248)" font-family="'Courier New', monospace" font-size="11" font-weight="700">
+        <!-- Bar 1: Python Backend (90%) -->
+        <text x="0" y="14" fill="#ffffff">PYTHON BACKEND</text>
+        <text x="590" y="14" text-anchor="end" fill="#00f5a0">90%</text>
+        <rect x="0" y="20" width="590" height="7" rx="3.5" fill="#1e293b"/>
+        <rect x="0" y="20" width="531" height="7" rx="3.5" fill="url(#barCyan)" filter="url(#cardGlow)">
+          <animate attributeName="width" values="0;531" dur="1.8s" fill="freeze"/>
+        </rect>
+
+        <!-- Bar 2: Generative AI (85%) -->
+        <g transform="translate(0, 31)">
+          <text x="0" y="14" fill="#ffffff">GENERATIVE AI &amp; LLMS</text>
+          <text x="590" y="14" text-anchor="end" fill="#a855f7">85%</text>
+          <rect x="0" y="20" width="590" height="7" rx="3.5" fill="#1e293b"/>
+          <rect x="0" y="20" width="501" height="7" rx="3.5" fill="url(#barPurple)" filter="url(#cardGlow)">
+            <animate attributeName="width" values="0;501" dur="2.1s" fill="freeze"/>
+          </rect>
+        </g>
+
+        <!-- Bar 3: RAG Systems (80%) -->
+        <g transform="translate(0, 62)">
+          <text x="0" y="14" fill="#ffffff">RAG SYSTEMS &amp; VECTOR DB</text>
+          <text x="590" y="14" text-anchor="end" fill="#38bdf8">80%</text>
+          <rect x="0" y="20" width="590" height="7" rx="3.5" fill="#1e293b"/>
+          <rect x="0" y="20" width="472" height="7" rx="3.5" fill="url(#barBlue)" filter="url(#cardGlow)">
+            <animate attributeName="width" values="0;472" dur="2.4s" fill="freeze"/>
+          </rect>
+        </g>
+
+        <!-- Bar 4: AI Agents (82%) -->
+        <g transform="translate(0, 93)">
+          <text x="0" y="14" fill="#ffffff">AUTONOMOUS AI AGENTS</text>
+          <text x="590" y="14" text-anchor="end" fill="#2dd4bf">82%</text>
+          <rect x="0" y="20" width="590" height="7" rx="3.5" fill="#1e293b"/>
+          <rect x="0" y="20" width="483" height="7" rx="3.5" fill="url(#barTeal)" filter="url(#cardGlow)">
+            <animate attributeName="width" values="0;483" dur="2.6s" fill="freeze"/>
+          </rect>
+        </g>
+      </g>
+    </g>
+
+    <!-- Outer Card Subtle Animated Border -->
+    <rect width="1200" height="460" rx="24" fill="none" stroke="url(#neonCyanPurple)" stroke-width="1.5" opacity="0.3" stroke-dasharray="160 480">
+      <animate attributeName="stroke-dashoffset" values="0;1200" dur="18s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 </svg>

@@ -1,7 +1,189 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170">
-<rect width="1200" height="170" rx="24" fill="#0b0f19" stroke="#24304a"/>
-<path d="M80 120 C250 20 360 155 520 75 S800 30 1120 110" fill="none" stroke="#00f5a0" stroke-width="2" opacity=".45"/>
-<circle cx="1120" cy="110" r="8" fill="#00f5a0"><animate attributeName="r" values="5;10;5" dur="2s" repeatCount="indefinite"/></circle>
-<text x="80" y="72" fill="white" font-family="Arial" font-size="28" font-weight="700">Keep learning. Keep building.</text>
-<text x="80" y="103" fill="#94a3b8" font-family="monospace" font-size="14">LET YOUR CODE DO THE TALKING.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913"/>
+      <stop offset="50%" stop-color="#0d1322"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+
+    <linearGradient id="cyanPurpFooter" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5a0"/>
+      <stop offset="50%" stop-color="#00d9ff"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <linearGradient id="pyruntimeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5a0"/>
+      <stop offset="40%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <filter id="footerGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="footerClip">
+      <rect width="1200" height="240" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#footerClip)">
+    <!-- Base Background -->
+    <rect width="1200" height="240" rx="24" fill="url(#footerBg)" stroke="#1e293b" stroke-width="2"/>
+
+    <!-- Circuit Light Trails Across Footer -->
+    <path d="M 60 190 Q 300 210 520 180 T 900 190 T 1150 170" fill="none" stroke="url(#cyanPurpFooter)" stroke-width="1.8" opacity="0.35" stroke-dasharray="10 16">
+      <animate attributeName="stroke-dashoffset" values="0;260" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 80 50 Q 320 20 560 60 T 980 40" fill="none" stroke="#a855f7" stroke-width="1.2" opacity="0.25" stroke-dasharray="8 20">
+      <animate attributeName="stroke-dashoffset" values="280;0" dur="10s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Floating Background Micro-particles -->
+    <circle cx="280" cy="110" r="1.5" fill="#00f5a0" opacity="0.5"><animate attributeName="cy" values="110;80;110" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="480" cy="70" r="2" fill="#a855f7" opacity="0.4"><animate attributeName="cy" values="70;40;70" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="780" cy="130" r="2" fill="#38bdf8" opacity="0.4"><animate attributeName="cy" values="130;100;130" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="1020" cy="90" r="1.5" fill="#00d9ff" opacity="0.5"><animate attributeName="cy" values="90;60;90" dur="7s" repeatCount="indefinite"/></circle>
+
+    <!-- Floating Code Symbols Floating Upward -->
+    <!-- Symbol 1: <> -->
+    <text x="210" y="140" fill="#00f5a0" font-family="'Courier New', monospace" font-size="14" font-weight="700" opacity="0.3">
+      &lt;&gt;
+      <animate attributeName="y" values="170;50;170" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="7s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Symbol 2: {} -->
+    <text x="290" y="160" fill="#38bdf8" font-family="'Courier New', monospace" font-size="16" font-weight="700" opacity="0.3">
+      &#123;&#125;
+      <animate attributeName="y" values="180;60;180" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.8;0.1" dur="9s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Symbol 3: // -->
+    <text x="430" y="130" fill="#a855f7" font-family="'Courier New', monospace" font-size="14" font-weight="700" opacity="0.3">
+      //
+      <animate attributeName="y" values="150;40;150" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="6s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Symbol 4: => -->
+    <text x="730" y="170" fill="#00d9ff" font-family="'Courier New', monospace" font-size="13" font-weight="700" opacity="0.25">
+      =&gt;
+      <animate attributeName="y" values="190;70;190" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="8s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Symbol 5: λ -->
+    <text x="820" y="120" fill="#c084fc" font-family="'Courier New', monospace" font-size="15" font-weight="700" opacity="0.3">
+      λ
+      <animate attributeName="y" values="140;40;140" dur="7.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="7.5s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- ========================================================
+         FUTURISTIC DEVELOPER CHARACTER & TERMINAL SILHOUETTE
+         (Positioned on Left: x: 70 - 180)
+         ======================================================== -->
+    <g transform="translate(70, 40)">
+      <!-- Holographic Terminal Podium / Desk -->
+      <path d="M 95 145 L 140 145 L 148 165 L 85 165 Z" fill="#1e293b" stroke="#334155" stroke-width="1.2"/>
+      <line x1="117" y1="145" x2="117" y2="105" stroke="#38bdf8" stroke-width="2"/>
+
+      <!-- Angled Floating Terminal Screen -->
+      <polygon points="105,75 145,65 142,105 102,115" fill="#0c172e" stroke="#00f5a0" stroke-width="1.5" filter="url(#softGlow)"/>
+      <line x1="110" y1="83" x2="135" y2="77" stroke="#00f5a0" stroke-width="1" opacity="0.7"/>
+      <line x1="109" y1="91" x2="137" y2="84" stroke="#00d9ff" stroke-width="1" opacity="0.7"/>
+      <line x1="108" y1="99" x2="132" y2="93" stroke="#38bdf8" stroke-width="1" opacity="0.7"/>
+
+      <!-- Holographic Terminal Beam Rising Upward -->
+      <polygon points="105,75 145,65 155,30 95,40" fill="url(#cyanPurpFooter)" opacity="0.12">
+        <animate attributeName="opacity" values="0.08;0.22;0.08" dur="2.5s" repeatCount="indefinite"/>
+      </polygon>
+
+      <!-- Developer Silhouette (Standing, Gesturing Toward Right Links) -->
+      <!-- Head / Hair -->
+      <circle cx="62" cy="62" r="13" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <!-- Glowing Cyber Visor -->
+      <rect x="66" y="59" width="10" height="4" rx="2" fill="#00f5a0" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Torso / Jacket Silhouette -->
+      <path d="M 48 76 L 76 76 L 79 125 L 45 125 Z" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+      <!-- Cyber Neon Seam Line on Jacket -->
+      <path d="M 62 76 L 62 125" stroke="#00d9ff" stroke-width="1" opacity="0.6"/>
+
+      <!-- Legs -->
+      <path d="M 47 125 L 59 165 L 53 165 L 43 125 Z" fill="#090d16"/>
+      <path d="M 65 125 L 75 165 L 81 165 L 77 125 Z" fill="#090d16"/>
+
+      <!-- Left Arm (Typing / touching terminal) -->
+      <path d="M 72 82 L 95 90 L 108 95" fill="none" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="108" cy="95" r="3" fill="#00f5a0" filter="url(#softGlow)"/>
+
+      <!-- Right Arm (Gesturing forward / pointing to profile links) -->
+      <path d="M 52 82 L 35 98 L 22 110" fill="none" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- Ambient Ground Circle Glow under character -->
+      <ellipse cx="62" cy="165" rx="35" ry="6" fill="#00f5a0" opacity="0.2" filter="url(#softGlow)"/>
+    </g>
+
+    <!-- ========================================================
+         MAIN FOOTER TEXT & PYRUNTIME BRANDING (Right / Center)
+         ======================================================== -->
+    <g transform="translate(250, 72)">
+      <!-- Mission / Moto -->
+      <text x="0" y="24" fill="#ffffff" font-family="Arial, 'Helvetica Neue', sans-serif" font-size="25" font-weight="800" letter-spacing="-0.3">
+        Keep learning. Keep building. Ship intelligent systems.
+      </text>
+
+      <!-- Brand Logo / Channel Name with Animated Glow -->
+      <g transform="translate(0, 42)">
+        <text x="0" y="34" fill="url(#pyruntimeGrad)" font-family="Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="3" filter="url(#softGlow)">
+          PYRUNTIME
+          <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" repeatCount="indefinite"/>
+        </text>
+
+        <!-- Brand Tagline -->
+        <text x="235" y="30" fill="#94a3b8" font-family="'Courier New', monospace" font-size="12" font-weight="700" letter-spacing="1.5">
+          // PRACTICAL PYTHON · BACKEND &amp; AI ENGINEERING
+        </text>
+      </g>
+
+      <!-- Sub-status breadcrumbs -->
+      <g transform="translate(0, 108)" font-family="'Courier New', monospace" font-size="11" font-weight="600">
+        <text x="0" y="0" fill="#64748b">
+          EXPLORE REPOSITORIES <tspan fill="#00f5a0">▲</tspan> · CONNECT ON LINKEDIN <tspan fill="#38bdf8">▲</tspan> · WATCH ON YOUTUBE <tspan fill="#f43f5e">▲</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- Far Right Security & Build Badge -->
+    <g transform="translate(1030, 80)">
+      <rect width="120" height="85" rx="12" fill="#0a0f1d" stroke="#1e293b" stroke-width="1.2"/>
+      <circle cx="60" cy="28" r="12" fill="#0f172a" stroke="#00f5a0" stroke-width="1.5"/>
+      <text x="60" y="32" text-anchor="middle" fill="#00f5a0" font-family="'Courier New', monospace" font-size="12" font-weight="900">&lt;/&gt;</text>
+      <text x="60" y="58" text-anchor="middle" fill="#ffffff" font-family="'Courier New', monospace" font-size="9.5" font-weight="700">VIKAS SHARMA</text>
+      <text x="60" y="70" text-anchor="middle" fill="#64748b" font-family="'Courier New', monospace" font-size="8.5" font-weight="600">v3.0.0 // LIVE</text>
+    </g>
+
+    <!-- Outer Card Animated Accent Border -->
+    <rect width="1200" height="240" rx="24" fill="none" stroke="url(#cyanPurpFooter)" stroke-width="1.5" opacity="0.35" stroke-dasharray="140 420">
+      <animate attributeName="stroke-dashoffset" values="0;1200" dur="15s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 </svg>

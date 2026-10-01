@@ -1,16 +1,284 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260">
-<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#00f5a0"/><stop offset="1" stop-color="#00d9ff"/></linearGradient></defs>
-<rect width="1200" height="260" rx="22" fill="#0b0f19" stroke="#24304a"/>
-<g fill="none" stroke="url(#g)" opacity=".38">
-<ellipse cx="600" cy="130" rx="420" ry="82"><animateTransform attributeName="transform" type="rotate" from="0 600 130" to="360 600 130" dur="18s" repeatCount="indefinite"/></ellipse>
-<ellipse cx="600" cy="130" rx="310" ry="55" transform="rotate(55 600 130)"/>
-<ellipse cx="600" cy="130" rx="210" ry="42" transform="rotate(-35 600 130)"/>
-</g>
-<circle cx="600" cy="130" r="42" fill="#111827" stroke="#00f5a0" stroke-width="2"/>
-<text x="600" y="126" text-anchor="middle" fill="#00f5a0" font-family="monospace" font-size="16">PYTHON</text>
-<text x="600" y="146" text-anchor="middle" fill="white" font-family="monospace" font-size="11">ENGINE</text>
-<g font-family="monospace" font-size="14" fill="#dbeafe">
-<text x="178" y="70">FASTAPI</text><text x="865" y="72">LLM</text><text x="250" y="210">DJANGO</text><text x="805" y="211">REDIS</text>
-<text x="465" y="45">RAG</text><text x="675" y="225">AI AGENTS</text>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="orbitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913"/>
+      <stop offset="50%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Neon Gradients -->
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5a0"/>
+      <stop offset="100%" stop-color="#00d9ff"/>
+    </linearGradient>
+
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5a0"/>
+      <stop offset="50%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <filter id="orbitGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="orbitClip">
+      <rect width="1200" height="480" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#orbitClip)">
+    <!-- Base Background -->
+    <rect width="1200" height="480" rx="24" fill="url(#orbitBg)" stroke="#1e293b" stroke-width="2"/>
+
+    <!-- Subtle Radar Grid Rings -->
+    <g stroke="#334155" stroke-width="0.8" opacity="0.2" fill="none">
+      <circle cx="600" cy="225" r="70"/>
+      <circle cx="600" cy="225" r="160"/>
+      <circle cx="600" cy="225" r="270"/>
+      <circle cx="600" cy="225" r="390"/>
+      <circle cx="600" cy="225" r="500"/>
+      <line x1="600" y1="30" x2="600" y2="420"/>
+      <line x1="100" y1="225" x2="1100" y2="225"/>
+    </g>
+
+    <!-- Header Tag -->
+    <g transform="translate(60, 42)">
+      <rect width="260" height="24" rx="12" fill="#0f172a" stroke="#00f5a0" stroke-width="1" opacity="0.85"/>
+      <circle cx="16" cy="12" r="4" fill="#00f5a0">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="28" y="16" fill="#00f5a0" font-family="'Courier New', monospace" font-size="11.5" font-weight="700" letter-spacing="2">AUTONOMOUS ORBITAL SYSTEM</text>
+    </g>
+
+    <text x="600" y="48" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">AI ARCHITECTURE &amp; BACKEND ORBIT</text>
+
+    <!-- Floating Background Micro-particles -->
+    <circle cx="200" cy="120" r="1.5" fill="#00f5a0" opacity="0.4"><animate attributeName="cy" values="120;100;120" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="980" cy="140" r="2" fill="#a855f7" opacity="0.5"><animate attributeName="cy" values="140;110;140" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="350" cy="380" r="1.5" fill="#38bdf8" opacity="0.4"><animate attributeName="cy" values="380;360;380" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="390" r="2" fill="#00d9ff" opacity="0.4"><animate attributeName="cy" values="390;370;390" dur="8s" repeatCount="indefinite"/></circle>
+
+    <!-- ==================== ROTATING ORBITS ==================== -->
+
+    <!-- Orbit 1: Inner Orbit (FastAPI, Django) -->
+    <g transform="translate(600, 225)">
+      <!-- Orbit Path -->
+      <ellipse rx="190" ry="75" fill="none" stroke="#00f5a0" stroke-width="1.2" opacity="0.35" stroke-dasharray="6 8">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Node: FastAPI -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+        <g transform="translate(190, 0)">
+          <!-- Counter-rotate text so it stays upright -->
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="20s" repeatCount="indefinite"/>
+            <circle r="22" fill="#0b1329" stroke="#00f5a0" stroke-width="1.8" filter="url(#softGlow)"/>
+            <circle r="6" fill="#00f5a0" opacity="0.4">
+              <animate attributeName="r" values="4;8;4" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <text y="4" text-anchor="middle" fill="#ffffff" font-family="'Courier New', monospace" font-size="10" font-weight="700">FASTAPI</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Node: Django -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="180" to="540" dur="20s" repeatCount="indefinite"/>
+        <g transform="translate(190, 0)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="-180" to="-540" dur="20s" repeatCount="indefinite"/>
+            <circle r="22" fill="#0b1329" stroke="#00d9ff" stroke-width="1.8" filter="url(#softGlow)"/>
+            <circle r="6" fill="#00d9ff" opacity="0.4">
+              <animate attributeName="r" values="4;8;4" dur="2.5s" repeatCount="indefinite"/>
+            </circle>
+            <text y="4" text-anchor="middle" fill="#ffffff" font-family="'Courier New', monospace" font-size="10" font-weight="700">DJANGO</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Orbit 2: Middle-Inner Orbit (Redis, PostgreSQL) - Inclined -25 deg -->
+    <g transform="translate(600, 225) rotate(-22)">
+      <ellipse rx="290" ry="110" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.32" stroke-dasharray="8 12">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="42s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Node: Redis -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="45" to="405" dur="26s" repeatCount="indefinite"/>
+        <g transform="translate(290, 0)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="-23" to="-383" dur="26s" repeatCount="indefinite"/>
+            <circle r="22" fill="#0b1329" stroke="#f43f5e" stroke-width="1.8" filter="url(#softGlow)"/>
+            <circle r="6" fill="#f43f5e" opacity="0.4">
+              <animate attributeName="r" values="4;8;4" dur="2.2s" repeatCount="indefinite"/>
+            </circle>
+            <text y="4" text-anchor="middle" fill="#ffffff" font-family="'Courier New', monospace" font-size="10" font-weight="700">REDIS</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Node: PostgreSQL -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="225" to="585" dur="26s" repeatCount="indefinite"/>
+        <g transform="translate(290, 0)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="-203" to="-563" dur="26s" repeatCount="indefinite"/>
+            <circle r="22" fill="#0b1329" stroke="#38bdf8" stroke-width="1.8" filter="url(#softGlow)"/>
+            <circle r="6" fill="#38bdf8" opacity="0.4">
+              <animate attributeName="r" values="4;8;4" dur="2.8s" repeatCount="indefinite"/>
+            </circle>
+            <text y="4" text-anchor="middle" fill="#ffffff" font-family="'Courier New', monospace" font-size="9" font-weight="700">POSTGRES</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Orbit 3: Middle-Outer Orbit (AWS) - Inclined +35 deg -->
+    <g transform="translate(600, 225) rotate(32)">
+      <ellipse rx="395" ry="135" fill="none" stroke="#fbbf24" stroke-width="1.2" opacity="0.30" stroke-dasharray="10 14">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="50s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Node: AWS -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="80" to="440" dur="34s" repeatCount="indefinite"/>
+        <g transform="translate(395, 0)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="-112" to="-472" dur="34s" repeatCount="indefinite"/>
+            <circle r="22" fill="#0b1329" stroke="#f59e0b" stroke-width="1.8" filter="url(#softGlow)"/>
+            <circle r="6" fill="#f59e0b" opacity="0.4">
+              <animate attributeName="r" values="4;8;4" dur="3s" repeatCount="indefinite"/>
+            </circle>
+            <text y="4" text-anchor="middle" fill="#ffffff" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">AWS</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Orbit 4: Outer Orbit (LLMs, RAG, AI Agents) - Inclined -10 deg -->
+    <g transform="translate(600, 225) rotate(-10)">
+      <ellipse rx="500" ry="165" fill="none" stroke="#c084fc" stroke-width="1.2" opacity="0.35" stroke-dasharray="12 16">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Node: LLMs -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="20" to="380" dur="40s" repeatCount="indefinite"/>
+        <g transform="translate(500, 0)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="-10" to="-370" dur="40s" repeatCount="indefinite"/>
+            <circle r="23" fill="#0b1329" stroke="#a855f7" stroke-width="2" filter="url(#softGlow)"/>
+            <circle r="6" fill="#a855f7" opacity="0.4">
+              <animate attributeName="r" values="4;8;4" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <text y="4" text-anchor="middle" fill="#ffffff" font-family="'Courier New', monospace" font-size="10" font-weight="700">LLMS</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Node: RAG -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="140" to="500" dur="40s" repeatCount="indefinite"/>
+        <g transform="translate(500, 0)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="-130" to="-490" dur="40s" repeatCount="indefinite"/>
+            <circle r="23" fill="#0b1329" stroke="#38bdf8" stroke-width="2" filter="url(#softGlow)"/>
+            <circle r="6" fill="#38bdf8" opacity="0.4">
+              <animate attributeName="r" values="4;8;4" dur="2.4s" repeatCount="indefinite"/>
+            </circle>
+            <text y="4" text-anchor="middle" fill="#ffffff" font-family="'Courier New', monospace" font-size="10" font-weight="700">RAG</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Node: AI Agents -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="260" to="620" dur="40s" repeatCount="indefinite"/>
+        <g transform="translate(500, 0)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="-250" to="-610" dur="40s" repeatCount="indefinite"/>
+            <circle r="24" fill="#0b1329" stroke="#ec4899" stroke-width="2" filter="url(#softGlow)"/>
+            <circle r="6" fill="#ec4899" opacity="0.4">
+              <animate attributeName="r" values="4;8;4" dur="2.7s" repeatCount="indefinite"/>
+            </circle>
+            <text y="4" text-anchor="middle" fill="#ffffff" font-family="'Courier New', monospace" font-size="9" font-weight="700">AI AGENTS</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- ==================== CENTRAL PYTHON ENGINE REACTOR ==================== -->
+    <g transform="translate(600, 225)">
+      <!-- Outer Core Pulsing Glow Halo -->
+      <circle r="62" fill="none" stroke="url(#neonCyan)" stroke-width="3" opacity="0.5" filter="url(#orbitGlow)">
+        <animate attributeName="r" values="58;72;58" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Rotating Gear / Dashed Circuit Teeth Ring -->
+      <circle r="56" fill="none" stroke="#00f5a0" stroke-width="1.8" stroke-dasharray="10 14" opacity="0.6">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Inner Rotating Reverse Circuit Ring -->
+      <circle r="48" fill="none" stroke="#a855f7" stroke-width="1.2" stroke-dasharray="6 10" opacity="0.5">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="10s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Solid Dark Core Base -->
+      <circle r="42" fill="#070d1e" stroke="url(#coreGrad)" stroke-width="2.5"/>
+
+      <!-- Center Pulsing Light Dot -->
+      <circle r="3" cy="-22" fill="#00f5a0">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Core Text -->
+      <text y="-3" text-anchor="middle" fill="#00f5a0" font-family="'Courier New', monospace" font-size="16" font-weight="900" letter-spacing="2">PYTHON</text>
+      <text y="15" text-anchor="middle" fill="#ffffff" font-family="'Courier New', monospace" font-size="11" font-weight="800" letter-spacing="3.5">ENGINE</text>
+    </g>
+
+    <!-- ==================== BOTTOM ARCHITECTURE FLOW STREAM ==================== -->
+    <g transform="translate(600, 442)">
+      <rect x="-420" y="-18" width="840" height="30" rx="15" fill="#090f1d" stroke="#1e293b" stroke-width="1.2"/>
+      <text text-anchor="middle" y="2" fill="#94a3b8" font-family="'Courier New', monospace" font-size="11.5" font-weight="700">
+        <tspan fill="#00f5a0">Python</tspan>
+        <tspan fill="#64748b"> ➔ </tspan>
+        <tspan fill="#38bdf8">Backend (FastAPI/Django)</tspan>
+        <tspan fill="#64748b"> ➔ </tspan>
+        <tspan fill="#f59e0b">Data (Postgres/Redis)</tspan>
+        <tspan fill="#64748b"> ➔ </tspan>
+        <tspan fill="#a855f7">GenAI &amp; RAG</tspan>
+        <tspan fill="#64748b"> ➔ </tspan>
+        <tspan fill="#ec4899">Autonomous Agents</tspan>
+      </text>
+    </g>
+
+    <!-- Animated Glowing Border Accent -->
+    <rect width="1200" height="480" rx="24" fill="none" stroke="url(#coreGrad)" stroke-width="1.5" opacity="0.35" stroke-dasharray="150 450">
+      <animate attributeName="stroke-dashoffset" values="0;1200" dur="16s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 </svg>

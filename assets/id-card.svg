@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+<defs><linearGradient id="g"><stop stop-color="#00f5a0"/><stop offset="1" stop-color="#00d9ff"/></linearGradient></defs>
+<rect width="1200" height="300" rx="24" fill="#0b0f19" stroke="#27324a"/>
+<rect x="32" y="32" width="1136" height="236" rx="18" fill="#101827" stroke="#334155"/>
+<circle cx="150" cy="150" r="76" fill="#111827" stroke="#00f5a0" stroke-width="2"/>
+<text x="150" y="142" text-anchor="middle" fill="#00f5a0" font-size="30" font-family="monospace" font-weight="700">VS</text>
+<text x="150" y="172" text-anchor="middle" fill="#94a3b8" font-size="12" font-family="monospace">PY ENGINEER</text>
+<text x="270" y="92" fill="#00f5a0" font-family="monospace" font-size="14" letter-spacing="3">DEVELOPER ID // 003+</text>
+<text x="270" y="135" fill="white" font-family="Arial" font-size="30" font-weight="700">Vikas Sharma</text>
+<text x="270" y="166" fill="#cbd5e1" font-family="Arial" font-size="17">Python Engineer · AI &amp; GenAI · Backend Systems</text>
+<text x="270" y="205" fill="#94a3b8" font-family="monospace" font-size="13">PYTHON  |  DJANGO  |  FASTAPI  |  LLM  |  RAG  |  AWS</text>
+<text x="1040" y="92" fill="#64748b" font-family="monospace" font-size="12">STATUS</text>
+<circle cx="1052" cy="122" r="7" fill="#00f5a0"><animate attributeName="opacity" values="1;.25;1" dur="1.5s" repeatCount="indefinite"/></circle>
+<text x="1070" y="127" fill="#e2e8f0" font-family="monospace" font-size="13">ACTIVE</text>
+</svg>

@@ -5,9 +5,9 @@
 
 <div align="center">
 
-<img src="./assets/hero.svg" alt="Vikas Sharma — Python Engineer, AI & GenAI" width="100%"/>
+<img src="./assets/hero.svg" alt="Vikas Sharma — Python AI/LLM Engineer" width="100%"/>
 
-### Python Engineer · AI & GenAI · LLMs · Backend Systems
+### Python AI/LLM Engineer · Generative AI · RAG & AI Agents · Backend Systems
 
 <p>
   <a href="https://github.com/vikas-m-sharma">
@@ -27,18 +27,19 @@
 
 ## ⚡ About Me
 
-I'm **Vikas Sharma**, a **Python Engineer with 3+ years of experience** building backend applications, automation workflows and AI-powered systems.
+I'm **Vikas Sharma**, a **Python AI/LLM Engineer with 3+ years of experience** building high-performance backend applications, intelligent automation workflows, and end-to-end AI/GenAI solutions.
 
-My current focus is the intersection of **Python + Backend Engineering + Generative AI** — turning LLM capabilities into practical products rather than just demos.
+My primary focus is at the intersection of **Python + Backend Engineering + Generative AI** — turning LLM capabilities into production-ready architectures, RAG pipelines, and autonomous AI agents.
 
-- 🐍 Building with **Python, Django, FastAPI and REST APIs**
-- 🤖 Exploring **GenAI, LLMs, RAG and AI Agents**
-- 🧠 Working with **prompt engineering, embeddings, vector databases and LLM APIs**
-- ⚙️ Comfortable with **Redis, Celery, background jobs and production-style backend systems**
-- ☁️ Working with **AWS and cloud deployment**
-- 🗄️ Building with **SQL, MySQL and PostgreSQL**
-- 🎥 Creating practical developer content on **PyRuntime**
-- 🚀 Always learning, shipping and improving
+- 🐍 Crafting high-performance backends with **Python, FastAPI, Django & REST APIs**
+- 🤖 Engineering **Generative AI, LLMs, RAG and Autonomous AI Agents**
+- 🧠 Building with **LangChain, Prompt Engineering, Embeddings & Vector Databases**
+- ⚙️ Orchestrating asynchronous architectures with **Celery & Redis**
+- ☁️ Deploying cloud-native solutions on **AWS (EC2, RDS)**
+- 🗄️ Designing optimized schemas & queries with **SQL, PostgreSQL and MySQL**
+- 🎨 Developing interactive web applications with **React**
+- 🎥 Creating practical developer tutorials and deep dives on **PyRuntime**
+- 🚀 Always learning, experimenting, and shipping production-grade software
 
 ---
 
@@ -50,17 +51,16 @@ My current focus is the intersection of **Python + Backend Engineering + Generat
 `Python` `Django` `FastAPI` `Django REST Framework` `REST APIs` `Celery` `Redis`
 
 ### 🤖 AI / ML / GenAI
-`LLMs` `Generative AI` `RAG` `AI Agents` `LangChain` `Prompt Engineering` `Embeddings`
-`Vector Databases` `Machine Learning` `Scikit-learn` `NLP`
+`Generative AI` `LLMs` `RAG` `AI Agents` `LangChain` `Vector Databases` `Prompt Engineering` `Embeddings` `Machine Learning` `Scikit-learn` `NLP`
 
-### 🗄️ Data
-`PostgreSQL` `MySQL` `SQL` `Pandas` `NumPy`
+### 🗄️ Databases & Storage
+`SQL` `PostgreSQL` `MySQL` `Redis`
 
 ### ☁️ Cloud & DevOps
 `AWS` `EC2` `RDS` `Git` `GitHub` `Linux` `Nginx`
 
 ### 🎨 Frontend
-`React` `HTML` `CSS` `Bootstrap`
+`React` `HTML5` `CSS3` `Bootstrap` `JavaScript`
 
 ---
 
@@ -70,26 +70,28 @@ My current focus is the intersection of **Python + Backend Engineering + Generat
 
 ---
 
-## 🚀 What I'm Building
+## 🚀 What I'm Building & Featured Projects
 
 <table>
 <tr>
 <td width="50%">
 
-### 🤖 AI Data Scientist Workspace
+### 🤖 [AI Data Scientist Workspace](https://github.com/vikas-m-sharma/ai-datasciece-wrokspace)
 
-An AI-assisted workspace for dataset analysis, notebook execution, preprocessing, model training and ML experimentation.
+An AI-assisted workspace for automated dataset analysis, notebook execution, preprocessing, and model training workflows.
+- 🔗 Backed by [`notebook_execution`](https://github.com/vikas-m-sharma/notebook_execution) (Python) & [`notebook_ui`](https://github.com/vikas-m-sharma/notebook_ui) (React)
 
-**Stack:** Python · FastAPI · React · PostgreSQL · Redis · AI Agents
+**Stack:** Python · FastAPI · React · Celery · Redis · AI Agents
 
 </td>
 <td width="50%">
 
-### 🧠 AI / LLM Applications
+### 🧠 [AI Agents & LLM Applications](https://github.com/vikas-m-sharma/ai_agent)
 
-Building practical applications around **RAG, LLMs, agents, tool calling and automation** with a strong Python backend.
+Production-oriented applications focused on **RAG, LLMs, autonomous agents, and tool calling**. Includes automated log analysis and document processing.
+- 🔗 Featured: [`log-analyzer-AI`](https://github.com/vikas-m-sharma/log-analyzer-AI) · [`Agent_read_excel`](https://github.com/vikas-m-sharma/Agent_read_excel) · [`AI-desktop-assistant`](https://github.com/vikas-m-sharma/AI-desktop-assistant)
 
-**Stack:** Python · FastAPI · LLM APIs · Vector DB · Redis
+**Stack:** Python · LangChain · LLM APIs · Vector DB · RAG
 
 </td>
 </tr>
@@ -97,20 +99,22 @@ Building practical applications around **RAG, LLMs, agents, tool calling and aut
 <tr>
 <td width="50%">
 
-### 🎓 FocusIn
+### 🎓 [FocusIn — Student Productivity App](https://github.com/vikas-m-sharma/FocusIn)
 
-A productivity and preparation platform designed around study schedules, question banks, performance tracking and learning workflows.
+A productivity and study timetable platform designed to help students organize daily schedules, track milestones, and structure learning goals.
+- 🔗 Repositories: [`FocusIn`](https://github.com/vikas-m-sharma/FocusIn) · Mobile App: [`FocusinAPP`](https://github.com/vikas-m-sharma/FocusinAPP)
 
-**Stack:** React Native · Firebase · AI
+**Stack:** React · React Native · JavaScript · Python APIs · Firebase
 
 </td>
 <td width="50%">
 
-### 📊 Machine Learning Projects
+### 📊 [Machine Learning & Predictive Systems](https://github.com/vikas-m-sharma/loan_approval_ml_project)
 
-End-to-end ML projects covering data analysis, preprocessing, feature engineering, model training and evaluation.
+End-to-end machine learning pipelines covering exploratory data analysis, feature engineering, model training, and predictive inference.
+- 🔗 Featured: [`loan_approval_ml_project`](https://github.com/vikas-m-sharma/loan_approval_ml_project) · [`health_insurance_cost_prediction`](https://github.com/vikas-m-sharma/health_insurance_cost_prediction) · [`final-heart-disease-project`](https://github.com/vikas-m-sharma/final-heart-disease-project)
 
-**Stack:** Python · Pandas · Scikit-learn · Jupyter
+**Stack:** Python · Scikit-learn · Pandas · NumPy · SQL
 
 </td>
 </tr>
@@ -135,7 +139,7 @@ End-to-end ML projects covering data analysis, preprocessing, feature engineerin
 
 > **Build it. Break it. Understand it. Improve it. Ship it.**
 
-I believe the best way to learn engineering is to build systems that solve real problems — then keep improving them through debugging, experimentation and production experience.
+I believe the best way to master engineering is to build systems that solve real problems — then continuously refine them through debugging, experimentation, and production iteration.
 
 ---
 
@@ -167,3 +171,4 @@ I believe the best way to learn engineering is to build systems that solve real 
 <img src="https://komarev.com/ghpvc/?username=vikas-m-sharma&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile views"/>
 
 </div>
+

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170">
+<rect width="1200" height="170" rx="24" fill="#0b0f19" stroke="#24304a"/>
+<path d="M80 120 C250 20 360 155 520 75 S800 30 1120 110" fill="none" stroke="#00f5a0" stroke-width="2" opacity=".45"/>
+<circle cx="1120" cy="110" r="8" fill="#00f5a0"><animate attributeName="r" values="5;10;5" dur="2s" repeatCount="indefinite"/></circle>
+<text x="80" y="72" fill="white" font-family="Arial" font-size="28" font-weight="700">Keep learning. Keep building.</text>
+<text x="80" y="103" fill="#94a3b8" font-family="monospace" font-size="14">LET YOUR CODE DO THE TALKING.</text>
+</svg>

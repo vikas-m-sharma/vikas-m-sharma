@@ -1,1 +1,24 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#090b14"/><stop offset="1" stop-color="#111827"/></linearGradient>
+  <linearGradient id="g" x1="0" x2="1"><stop stop-color="#00f5a0"/><stop offset="1" stop-color="#00d9ff"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="360" rx="28" fill="url(#bg)" stroke="#24304a"/>
+<circle cx="1030" cy="70" r="160" fill="#172554" opacity=".35"/>
+<circle cx="150" cy="320" r="130" fill="#172554" opacity=".25"/>
+<g fill="none" stroke="url(#g)" opacity=".28">
+ <circle cx="930" cy="180" r="100"/><circle cx="930" cy="180" r="145"/><ellipse cx="930" cy="180" rx="145" ry="55"/>
+</g>
+<g filter="url(#glow)">
+ <circle cx="930" cy="180" r="18" fill="#00f5a0"/>
+ <circle cx="780" cy="180" r="6" fill="#00d9ff"><animate attributeName="cx" values="780;1080;780" dur="7s" repeatCount="indefinite"/></circle>
+</g>
+<text x="72" y="100" fill="#00f5a0" font-family="monospace" font-size="17" letter-spacing="4">PYTHON ENGINEER // AI SYSTEMS</text>
+<text x="72" y="160" fill="white" font-family="Arial,sans-serif" font-size="48" font-weight="700">Vikas Sharma</text>
+<text x="72" y="202" fill="#a7b0c0" font-family="Arial,sans-serif" font-size="22">3+ years building backend &amp; intelligent systems</text>
+<text x="72" y="250" fill="#d5dbea" font-family="monospace" font-size="17">Python • Django • FastAPI • LLMs • RAG • AI Agents • AWS</text>
+<g font-family="monospace" font-size="13" fill="#7dd3fc">
+ <text x="72" y="305">STATUS: BUILDING</text><text x="250" y="305">MODE: LEARNING</text><text x="415" y="305">STACK: PYTHON</text>
+</g>
+</svg>
